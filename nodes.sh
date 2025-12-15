@@ -44,7 +44,7 @@ class NodeController extends Controller
         // === 🔒 FITUR TAMBAHAN: Anti akses selain admin ID 1 ===
         $user = Auth::user();
         if (!$user || $user->id !== 1) {
-            abort(403, '🚫 Akses ditolak! Hanya admin ID 1 yang dapat membuka menu Nodes. ©BOT PROTECT, t.me/tristanalways.');
+            abort(403, '🚫 AKSES DI TOLAK BRO! HANYA ADMIN ID 1 YANG DAPAT MEMBUKA MENU NODEA. ©BOT PROTECT, t.me/tristanalways.');
         }
         // ======================================================
 
