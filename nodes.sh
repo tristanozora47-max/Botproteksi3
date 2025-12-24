@@ -44,7 +44,7 @@ class NodeController extends Controller
         // === 🔒 FITUR TAMBAHAN: Anti akses selain admin ID 1 ===
         $user = Auth::user();
         if (!$user || $user->id !== 1) {
-            abort(403, '🚫 AKSES DI TOLAK BRO! HANYA ADMIN ID 1 YANG DAPAT MEMBUKA MENU NODEA. ©BOT PROTECT, t.me/tristanalways.');
+            abort(403, '🚫 AKSES DITOLAK! HANYA ADMIN ID 1 YANG DAPAT MEMBUKA MENU NODES. ©BOT PROTECT, t.me/tristanalways.');
         }
         // ======================================================
 
@@ -65,4 +65,4 @@ chmod 644 "$REMOTE_PATH"
 echo "✅ Proteksi Anti Akses Nodes berhasil dipasang!"
 echo "📂 Lokasi file: $REMOTE_PATH"
 echo "🗂️ Backup file lama: $BACKUP_PATH (jika sebelumnya ada)"
-echo "🔒 Hanya Admin (ID 1) yang bisa Akses Nodes."
+echo "🔒 HANYA ADMIN (ID 1) YANG BISA AKSES NODES."
